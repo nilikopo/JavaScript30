@@ -40,7 +40,8 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
     console.log(comments.findIndex(comment => comment.id = 823423))
-    delete comments[0]
+    // delete comments[0]
+    comments.splice(0, 1) // удаление по индексу , кол-во элементов
 
   </script>
 </body>
