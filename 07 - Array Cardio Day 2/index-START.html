@@ -48,6 +48,12 @@
     // delete comments[0]
     comments.splice(0, 1) // удаление по индексу , кол-во элементов
 
+    // 2 способ
+    const newComments = [
+      ...comments.slice(0, index),
+      ...comments.slice(index + 1),
+    ]
+
   </script>
 </body>
 </html>
